@@ -1,1 +1,0 @@
-// https://teamtreehouse.com/library/javascript-and-the-dom-2/responding-to-user-interaction/adding-an-event-listener
