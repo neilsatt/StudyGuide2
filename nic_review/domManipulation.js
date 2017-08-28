@@ -1,0 +1,1 @@
+/* DOM - different ways to access elements */
