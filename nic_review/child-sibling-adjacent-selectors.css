@@ -1,3 +1,73 @@
 /* 
-  CSS child, adjacent and sibling selectors
+  CSS child, adjacent and sibling selectors, also called combinators
+  https://www.w3schools.com/css/css_combinators.asp
 */
+
+/* Four Combinators:
+
+    Descendant selector (space)
+    Child selector (>)
+    Adjacent sibling selector (+)
+    General sibling selector (~)
+
+*/
+
+/* SAMPLE HTML 
+
+    <div>
+        <p>Paragraph 1 in the div.</p>
+        <p>Paragraph 2 in the div.</p>
+        <span><p>Paragraph 3 in the div.</p></span>
+    </div>
+
+    <p>Paragraph 3. Not in a div.</p>
+    <p>Paragraph 4. Not in a div.</p>
+
+*/
+
+
+
+/* DESCENDENT --------------------------------------------------------------
+
+   Matches ALL elements that are descendents of a specified element.
+
+   This would selects all 3 of the <p> elements inside the div 
+*/
+div p {
+    background-color: yellow;
+}
+
+
+/* CHILD ---------------------------------------------------------------------
+
+   Selects all elements that are the IMMEDIATE children of a specified element. 
+
+   This would select the first 2 of the <p> elements inside the div 
+   (inside the span is not an immediate child)
+*/
+div > p {
+    background-color: yellow;
+}
+
+
+
+/* ADJACENT ------------------------------------------------------------------- 
+
+   Selects all elements that are the adjacent siblings of a specified element.
+
+   Selects thel <p> element DIRECTLY after the div (paragraph 3)
+*/
+div + p {
+    background-color: yellow;
+}
+
+/* SIBLING --------------------------------------------------------------------
+
+   Selects all elements that are siblings of a specified element.
+
+   Selects all <p> elements that are SIBLINGS of the div (paragraph 3 & 4)
+*/
+div ~ p {
+    background-color: yellow;
+}
+
