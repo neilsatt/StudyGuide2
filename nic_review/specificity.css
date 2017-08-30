@@ -1,0 +1,24 @@
+/*
+    Specificity - determines which CSS rule is applied by browsers 
+    MOST SPECIFIC WINS
+    1) Inline
+    1) ID
+    2) Class
+    3) Element/Pseudo Element
+
+    If rules have the same specificity, the one that appears later in the code wins
+    !important - always takes precendence 
+   
+*/
+
+p {
+    color: red; 
+}
+
+#green {
+    color: limegreen;
+}
+
+.blue {
+    color: blue;
+}
