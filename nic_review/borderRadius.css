@@ -1,1 +1,31 @@
 /* CSS Border Radius */
+
+/* Add to a div  */
+
+div {
+    border: 2px solid;
+    border-radius: 25px;
+}
+
+/* How to tell which corner?
+
+Four values: 
+    border-radius: 15px 50px 30px 5px; 
+    top-left, top-right, bottom-right, bottom-left (clock-wise)
+
+Three values: 
+    border-radius: 15px 50px 30px; 
+    first = top-left
+    second = top-right and bottom-left
+    third =  bottom-right
+
+Two values:
+    border-radius: 15px 50px;
+    first = top-left and bottom-right
+    second = top-right and bottom-left
+
+
+One Value - All 4 corners are rounded the same 
+
+
+*/
