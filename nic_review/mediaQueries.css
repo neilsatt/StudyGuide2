@@ -1,2 +1,25 @@
-/* Media Queries */
+/* Media Queries 
+  min-width and max-width
+*/
 
+/* Min-Width - If device width is greater or equal to 520, then */
+@media (min-width: 520px) {
+   p {
+        padding-left: 30px;
+    }
+}
+
+
+/* Max-Width - If device width is less than or equal to 520, then */
+@media (max-width: 1024px) {
+   p {
+        margin-left: 30px;
+    }
+}
+
+/* combine both */
+@media (min-width: 481px) and (max-width: 720px){
+   p {
+        background: red;
+    }
+}
