@@ -1,0 +1,31 @@
+#left {
+    float: left;
+    border: 1px solid grey;
+    width: 40%;
+}
+
+#right {  
+    float: right;
+    border: 1px solid teal;
+    width: 40%;
+}
+
+footer {
+    border: 2px solid black;  
+    clear: both;
+    margin-top: 20px; /* this only works if the parent element ISN'T collapsed (has the group class) */
+}
+
+/* This will collapse if the only content is the floated divs */
+#container {
+    border: 2px solid green;  
+}
+
+
+.group:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+

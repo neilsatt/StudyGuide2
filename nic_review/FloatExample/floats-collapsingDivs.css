@@ -1,0 +1,39 @@
+/* https://css-tricks.com/all-about-floats 
+  https://www.w3schools.com/css/css_float.asp
+
+
+*/
+
+
+
+
+/* Floats 
+
+    The element is taken out of the normal flow of the page and placed
+    on the right or left side of a container. 
+
+*/
+
+.tips {
+  float: right;
+}
+
+/* 
+    If a block element contains floated children, its height will collapse.
+    We fix it by clearing the float after the floated elements in the container but before the close of the container.
+
+*/
+
+/* This will fix the collapsing parent div */
+.group:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Collapsing Divs */
+
+
+
+
