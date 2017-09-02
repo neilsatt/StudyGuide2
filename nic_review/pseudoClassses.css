@@ -1,12 +1,8 @@
 /* CSS Pseudo-classes
 
-https://teamtreehouse.com/library/css-selectors
+https://teamtreehouse.com/library/css-basics/basic-selectors/pseudoclasses - do the Challenges 
 
-https://teamtreehouse.com/library/css-layout-basics
-
-http://www.barelyfitz.com/screencast/html-training/css/positioning/
-
-https://teamtreehouse.com/library/css-basics/basic-selectors/pseudoclasses
+https://teamtreehouse.com/library/css-selectors - has more advanced pseudo elements - do the Challenges 
 
 Unlike type, ID and class selectors, pseudo-classes can target elements dynamically based 
 on user interaction, an element’s state, and more.
@@ -54,14 +50,89 @@ p:first-child {
 }
 
 
+/* :first-child and :last-child   */
+div:first-child {
+  margin-left: 0;
+}
+
+li:last-child {
+  float: right;
+}
 
 
 
 
+/* Using :only-child and :empty */
+
+/* To target a span that is the only child element in a parent div, we can write:*/
+div span:only-child {
+  font-size: .5em;
+}
 
 
-/*    */
+/* To target all elements that have no child content, we can write: */
 
-/*    */
+:empty {
+  background: red;
+}
+
+
+/* Using :disabled and :checked */
+To target a disabled input element, we can write:
+
+input:disabled {
+  background-color: grey;
+}
+
+/* To target a radio button or checkbox when checked, we can write:  */
+
+:checked {
+  border-color: red;
+}
+
+/* :nth-child is a powerful structural pseudo-class because it targets child elements based on any position inside a parent. */
+
+/* This target the even li elements in a parent: 
+
+  nth child starts at 1 (odd) then 2 (even)
+*/
+
+li:nth-child(even) {   
+  background: blue;
+  color: white;
+}
+
+/* first-line and first-letter */
+::first-line {
+  color: blue;
+  text-transform: uppercase;
+}
+
+p::first-letter {
+  color: red;
+  font-size: 130%;
+}
+
+/* Before and After */
+/* Add a heart before links */
+a::before {
+  content: "♥";
+}
+
+/* Add an arrow after links */
+a::after {
+  content: "→";
+}
+
+/* The attr() function inserts an element's attribute value as page content  */
+/* This pseudo-element rule will insert the value of an a element's title attribute after the link's content
+
+a::after {
+  content: attr(title);
+}
+
+
+
+
 
 
