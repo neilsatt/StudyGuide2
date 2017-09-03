@@ -1,1 +1,52 @@
-<! -- Form Structure/Buttons -->
+<! -- Form Structure and Buttons 
+
+    input elements don't have closing tags
+    radio and checkboxes are inputs
+    
+    Fieldsets group related material together
+    Legend give the group a header/name
+
+    'name' value for a radio button, groups them together
+
+     input type="button"  is just a button and won't do anything by itself (unless you add an event handler)
+     input type="submit" , when inside a form element, will submit the form when clicked.
+  
+
+-->
+
+<form>
+  <fieldset>
+    <legend>Fruit juice size</legend>
+    <p>
+      <input type="radio" name="size" id="size_1" value="small">
+      <label for="size_1">Small</label>
+    </p>
+    <p>
+      <input type="radio" name="size" id="size_2" value="medium">
+      <label for="size_2">Medium</label>
+    </p>
+    <p>
+      <input type="radio" name="size" id="size_3" value="large">
+      <label for="size_3">Large</label>
+    </p>
+  </fieldset>
+    
+   <fieldset>
+    <legend>Favorite Foods</legend>
+    <p>
+      <input type="checkbox" name="size" id="1" value="turkey">
+      <label for="size_1">Turkey</label>
+    </p>
+    <p>
+      <input type="checkbox" name="size" id="2" value="chicken">
+      <label for="chicken">Chicken</label>
+    </p>
+    <p>
+      <input type="checkbox" name="size" id="3" value="pizza">
+      <label for="pizza">Pizza</label>
+    </p>
+  </fieldset>
+   <input type="submit" value="Click Me Submit"> 
+  <button type="submit">Click Me Button!</button> 
+</form>
+
