@@ -1,0 +1,35 @@
+/* 
+
+    Mobile First - The technique of creating mobile websites first and then progressively enhancing them to create the desktop version.
+
+    - You serve the basic layout styles to style a mobile device first
+    - Then using media queries, you add breakpoints for wider screens/devices
+
+
+    https://teamtreehouse.com/library/how-to-make-a-website/css-cascading-style-sheets/take-a-mobilefirst-approach
+
+    https://teamtreehouse.com/library/css-layout-basics/getting-started-with-css-layout/using-a-mobile-first-approach
+
+*/
+
+/* 
+    Mobile first is easier since there are less things... then you can progressively enhance from there.
+
+    Mobile first approach uses min-width media feature - building up from 
+    narrow screens to wider screens. The browser will automatically load
+    all of the other base styles that are not in the media query. 
+
+*/
+/* Only devices that are 769 pixels or wider, will load these: */
+
+@media (min-width: 769px) {
+    .container {
+        width: 70%;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+}
+
+
+
+
