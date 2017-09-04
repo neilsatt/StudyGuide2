@@ -1,3 +1,5 @@
+https://stackoverflow.com/questions/3127429/how-does-the-this-keyword-work
+
 // 'this' keyword and JS Scope
 
 // You can use 'this' to refer to the Object on which the method is currently being called
@@ -55,4 +57,56 @@ function windowSize() {
 }
 
 
+/* 
+    2) Global Variables become properties of the window object, which means you can access global variables using the window object. 
+      
+*/
+
+var width = 600;
+
+var shape = {
+    width: 300;
+}
+
+var showWidth = function() {
+    document.write(this.width);
+};
+
+showWidth(); // 600
+
+
+/* 
+    3) When a function is defined inside an object, it becomes a method. In a method, 'this' refers to the containing method. 
+      
+*/
+
+var shape = {
+    width: 300,
+    getArea: function() {
+        return this.width;  // same as shape.width
+    }
+}
+
+shape.getArea(); // 300 
+
+
+/* 
+    4) If a named function has been defined in global scope, and it is then used as a method of an object, 'this' refers to teh object it is contained within. 
+       Same showWidth as #2, but it is assigned as a method of an object    
+      
+*/
+
+var width = 600;
+
+var shape = {
+    width: 300
+};
+
+var showWidth = function() {
+    document.write(this.width);
+};
+
+shape.getWidth = showWidth;
+
+shape.getWidth();
 
