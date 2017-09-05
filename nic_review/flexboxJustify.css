@@ -1,2 +1,89 @@
-/* CSS Flexbox - Justify Content */
+/* CSS Flexbox - Justify Content 
+    https://teamtreehouse.com/library/css-flexbox-layout
+
+    http://www.sketchingwithcss.com/samplechapter/cheatsheet.html
+*/
+
+
+/* 
+    flex container - sets the context for flexbox layout. It contains flex items, 
+                     the actual elements you layout using flexbox. 
+
+    Every direct child of a flex container is a flex item. 
+    
+    Once the children are flex items, you can take advantage of the alignment properties. 
+
+    Flexbox follows two axes that determine the layout:
+        main axis - the primary axis along which flex items are laid out
+        cross axis - runs perpendicular to the main axis (at an angle 90 degrees to a given line)
+        The default main-start and main-end direction of the main axis is left-to-right
+        The default direction of the cross axis is top-to-bottom
+    
+*/
+
+
+/* Flexbox quiz
+
+    The first step in any flexbox layout is to create a: flex container
+    Flexbox is a CSS property - False, it is a set of CSS properties that provide a 
+                                flexible way to layout content. 
+
+    Every direct child of a flex container is called a: flex item
+    
+    Flexbox follows two axes that determine the layout direction of flex items. Everything
+    in a flexbox layout is relative to the: Main axis and Cross axis
+
+    Which of the following is an example of what you can do with flexbox:
+        You can evenly distribute column space inside a row and rearrange their order
+     
+    Which axis defines the primary direction of flex items inside a flex container: Main Axis
+
+
+*/
+
+
+
+
+/* 
+    How you move flex items to the top depends on the orientation of the main axis.
+
+    If it's vertical, you set align-items.
+
+    If it's horizontal, you set justify-content (defines the alignment along the main axis)
+        flex-start (default): items are packed toward the start line
+        flex-end: items are packed toward the end line
+        center: items are centered along the line
+        space-between: items are evenly distributed in the line; first item is on the start line, last item on the end line
+        space-around: items are evenly distributed in the line with equal space around them
+        space-evenly: items are distributed so that the spacing between any two adjacent alignment subjects
+
+
+        <ul class="flex-container flex-start">
+        <ul class="flex-container flex-end">
+        Etc...
+
+*/
+
+/* Steps for creating a Flex container
+    - Define a flex container in your layout. To do this:
+      Set the display property of an element to one of the flexbox layout values: flex or inline-flex
+
+    - By default, flex items are laid out horizontally on the main axis from left to right.
+    - By default, flex items stretch to fill the flex container's height.
+    - display: flex; creates a block-level flex container.
+    - display: inline-flex; creates an inline flex container.
+
+    ** Note
+    Any element outside a flex container is not affected by the flexbox layout.
+    Only children of a flex container automatically become flex items.
+
+*/
+.container {
+    /* display: flex; /* block-level, takes up the full row */
+    display: inline-flex; /* inline only takes up the space of the divs, leaving extra space */
+    height: 300px;
+}
+
+    
+    
 

@@ -126,7 +126,7 @@ a::after {
 
 /* The attr() function inserts an element's attribute value as page content  */
 /* This pseudo-element rule will insert the value of an a element's title attribute after the link's content
-
+*/
 a::after {
   content: attr(title);
 }
