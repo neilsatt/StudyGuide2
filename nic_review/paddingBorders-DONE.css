@@ -27,3 +27,8 @@
 }
 
 /* Finally, give the .secondary-content element a dotted, lightgrey bottom border that's 2px wide. */
+.secondary-content {
+    padding-top: 80px;
+    padding-bottom: 70px;
+    border-bottom: dotted 2px lightgrey;
+}

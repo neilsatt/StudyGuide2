@@ -19,6 +19,10 @@ img {
 #gallery li {
     float: left;
     width: 45%;
+    margin: 2.5%;
+    color: blue;
+    background-color: teal;
 }
 
 /* Add a margin of 2.5% to the gallery list items. Then, change the text color and background to something other than the browser default. The default is black text on a white background, so choose something different */
+
