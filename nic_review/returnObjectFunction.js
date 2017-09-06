@@ -8,6 +8,13 @@
     
 */
 
+var myFunction = function(myArray, myNum) {
+    var firstArrayValue = myArray[0];
+    var secondArrayValue = myArray.length - 1;
+    
+    
+}
+
 // Version One
 
 var player = makeGamePlayer("John Smith", 15, 3);

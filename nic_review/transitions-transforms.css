@@ -12,3 +12,60 @@
 }
 
 /* Write a declaration that will transition only the color and background values of .content. */
+.content {
+  transition-property: color, background;
+}
+
+/* Next, set the duration of the color transition to 400 milliseconds, and the duration of the background transition to 500 milliseconds.*/ 
+.content {
+  transition-property: color, background;
+  transition-duration: .4s, .5s;
+}
+
+/* Quiz 1 */ 
+
+/* 
+
+    A time value of 500ms is equivalent to the value
+        .5s
+
+
+    What property defines the property, or properties, you want to transition?
+        transition-property
+
+
+    What property sets how long a transition should last?
+        transition-duration
+
+    Every CSS property can accept a transition.
+        False, only animatable properties with identifiable halfway points can accept transitions. 
+
+    Given the CSS below, what is the transition-duration for background?
+
+        .card {
+            transition-property: color, background, box-shadow;
+            transition-duration: .4s, .5s, .6s;
+        }
+    
+        Answer = .5s
+
+
+    Given the CSS below, how will the browser display the transition?
+        .card {
+          transition-property: background;
+          transition-duration: .4s;
+        }
+
+        .card:hover {
+          background: lightyellow;
+        }
+
+    Answer = The background transitions to lightyellow on hover, then transitions back
+             to the original color on hover-off. 
+
+    
+
+    
+
+    
+    
