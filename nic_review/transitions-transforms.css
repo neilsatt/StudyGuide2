@@ -1,1 +1,14 @@
-/* https://teamtreehouse.com/library/css-transitions-and-transforms  */
+/* https://teamtreehouse.com/library/css-transitions-and-transforms  
+
+    Quizzes and Challenges 
+
+*/
+
+/* Write a declaration that will transition only the height value of .collapsed, with a value of .6s */
+.collapsed {
+	height: 0;
+	overflow: hidden;
+    transition: height .6s;
+}
+
+/* Write a declaration that will transition only the color and background values of .content. */

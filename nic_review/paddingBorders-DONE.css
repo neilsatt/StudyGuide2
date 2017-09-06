@@ -1,0 +1,29 @@
+/* https://teamtreehouse.com/library/css-basics/the-box-model/padding-borders-and-margins */
+
+/* 
+    Let's style parts of the Lake Tahoe website using padding, borders, and margins. First, target the class primary-content. Set the top padding to 25 pixels and the bottom padding to 95 pixels.
+*/ 
+
+.primary-content {
+    padding-top: 25px;
+    padding-bottom: 95px;
+}
+
+/* Next, give the .wildlife div a solid, orange top border that's 10px wide. */
+.wildlife {
+    border-top: solid orange 10px;
+}
+
+/* Target the .secondary-content div. Set the top padding to 80 pixels and the bottom padding to 70 pixels.  */
+.secondary-content {
+    padding-top: 80px;
+    padding-bottom: 70px;
+}
+
+/* Let's separate the .wildlife container from the content above it. Give .wildlife a top margin of 105 pixels. */
+.wildlife {
+    border-top: solid orange 10px;
+    margin-top: 105px;
+}
+
+/* Finally, give the .secondary-content element a dotted, lightgrey bottom border that's 2px wide. */

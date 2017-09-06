@@ -1,7 +1,0 @@
-/* https://teamtreehouse.com/library/css-basics/basic-layout/styling-the-wildlife-div-with-background-properties
-*/
-
-/* Create a new rule that targets the class 'wildlife'. Set the bear.jpg image, located in the img folder, as the background image. */
-.wildlife {
-    background-image: url(img/bear.jpg);
-}

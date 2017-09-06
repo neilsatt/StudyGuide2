@@ -1,0 +1,27 @@
+/* https://teamtreehouse.com/library/css-basics/basic-layout/styling-the-wildlife-div-with-background-properties
+*/
+
+/* Create a new rule that targets the class 'wildlife'. Set the bear.jpg image, located in the img folder, as the background image. */
+.wildlife {
+    background-image: url(img/bear.jpg);
+    
+    background-repeat: no-repeat;
+    
+    background-position:center;
+    
+    background-size:cover;
+    
+    box-sizing: border-box;
+}
+
+/* Next, define the background property and value that prevents a background image from repeating in any direction. */
+
+
+/* Next, position the background image in the center of the '.wildlife' element. */
+
+
+/* Add a background-size property. Set a value that fills the entire background of the container while maintaining the width and height proportions. */
+
+/* 
+   Finally, give .wildlife the box-sizing property and value that forces any padding and border widths into its total width and height
+*/
