@@ -1,0 +1,24 @@
+/* https://teamtreehouse.com/library/how-to-make-a-website/styling-web-pages-and-navigation/make-a-css-image-gallery */
+
+
+
+/* 1) Add CSS that will allow all images to fill their parent element. */
+
+img {
+    max-width: 100%;
+}
+
+/* Select the element with the ID gallery. Then, remove the margin, padding, and bullet points. */
+#gallery {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+/* Select the list items nested inside the gallery. Float them to the left and set the width to 45%. */
+#gallery li {
+    float: left;
+    width: 45%;
+}
+
+/* Add a margin of 2.5% to the gallery list items. Then, change the text color and background to something other than the browser default. The default is black text on a white background, so choose something different */
