@@ -41,7 +41,7 @@
         False, only animatable properties with identifiable halfway points can accept transitions. 
 
     Given the CSS below, what is the transition-duration for background?
-
+ */
         .card {
             transition-property: color, background, box-shadow;
             transition-duration: .4s, .5s, .6s;
@@ -49,8 +49,8 @@
     
         Answer = .5s
 
-
-    Given the CSS below, how will the browser display the transition?
+/* 
+    Given the CSS below, how will the browser display the transition?  */
         .card {
           transition-property: background;
           transition-duration: .4s;
@@ -68,7 +68,110 @@
         All
     
 
+/* Transition Timing Functions and Delays */
+
+/* 
+    What property lets you set the start time of a transition?
+        - transition-delay
+
+
     
+    What property provides a way to accelerate and decelerate a transition's speed?
+        - transition-timing-function
+
+
+
+    What is the transition-delay value in this code:
+        .icon {
+            transition: opacity .4s ease-out .2s;
+        }
+        -  .2s
+
+
+
+    How can you write transitions using shorthand?
+        .box {
+          transition-property: color, background;
+          transition-duration: .4s, .6s;
+          transition-delay: 0s, .2s;
+        }
+
+        - transition: color .4s 0s, background .6s .2s
+
+
+
+
+    The transition-timing-function value affects the duration of a transition
+        - False. Timing functions do not affect the duration, only how fast or slow you 
+                  perceive the transition to be. 
+
+
+
+
+    A time value of 1500ms is equivalent to the value:
+        - 1.5s
+
+
+
+    What does the browser apply to the opacity transition?
+        .icon {
+              opacity: 0;
+              transition-property: opacity;
+              transition-duration:  .4s;
+        }
+    -  ease
+
+
+
+    What property provides a way to accelerate and decelerate a transition's speed?
+        - transition-timing-function
+
+*/
+
+
+
+
+
+/* Getting Started with CSS Transforms */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     
     
