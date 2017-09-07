@@ -134,19 +134,65 @@
 
 /* Getting Started with CSS Transforms */
 
+/* 
+In the .photo:hover .overlay rule, write a transform that will move the element up 100% from its original space.
+
+*/
+
+.photo:hover .overlay {
+  transform: translateY(-100%);
+}
+
+/* Next, in the .photo:hover img rule, scale the image 1.3 times its size. */
+.photo:hover img {
+  transform: scale(1.3); 
+}
+
+/* QUIZ */
+
+/* Given the CSS below, what transformation(s) will .photo display on :hover? */
+
+    .photo {
+      transform: scale(1.5);
+    }
+
+    .photo:hover {
+      transform: rotate(-5deg);
+    }
+
+   /* - Rotated '-5deg' only */
 
 
+/* In the image (box tilted slightly to the right- web-transform.png), the grey box represents the box's original position.
+   What property and value sets the rotation's origin to the one shown in the image?
+
+  - tranform-origin: 100% 100%;
+*/
 
 
+/* What is the default origin of an HTML element 
+    - center
+*/
+
+/* What transform element lets you move elements sideways?
+    - traslateX()
+*/
 
 
+/* Which of the following declarations will create the rotation shown (box slightly moved to the left - box-rotating.png) in the image above?
+    - transform: rotate(-15deg)
+*/
 
 
+/* Given the image (web_bezier.png), if you're using an easing tool like cubic-bezier.com, what type of easing 
+    effect does this bezier curve create?
+    - the transition starts slow, then rapidly accelerates towards the end of its duration
+*/
 
 
-
-
-
+/* All CSS transformations need to be written as a value of what property?
+    - transform
+*/
 
 
 
