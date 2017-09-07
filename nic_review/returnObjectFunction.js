@@ -10,10 +10,17 @@
 
 var myFunction = function(myArray, myNum) {
     var firstArrayValue = myArray[0];
-    var secondArrayValue = myArray.length - 1;
-    
-    
+    alert(firstArrayValue);
+    var lastItem = myArray.pop()
+    alert(lastItem);
+       
 }
+myFunction([23,44,42], 33);
+
+
+
+
+
 
 // Version One
 
