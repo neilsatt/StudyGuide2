@@ -38,10 +38,10 @@ Super Conditional Challenge - Review
 Creating a Function - OK
 Returning a Value from a Function - OK
 Passing an Argument to a Function - OK
-Create a max() Function - 
-Selecting Page Elements - 
-Adding Events - 
-Traversing Elements - 
-DOM Manipulation - 
-Modifying Elements - 
-Event Delegation - 
+Create a max() Function - OK
+Selecting Page Elements - OK
+Adding Events - OK 
+Traversing Elements - Review
+DOM Manipulation - Review
+Modifying Elements - OK
+Event Delegation - Review 
