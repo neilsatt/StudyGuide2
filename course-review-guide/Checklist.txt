@@ -3,30 +3,27 @@ Code Challenge Review - what needs work?
 ---------------------------------------------------------
 HTML 
 ---------------------------------------------------------
-
-
-
-
-
-
-
-
-
-
-
+Write an HTML Doctype
+Create a navigation bar with list items
+Organize with Unordered Lists
+Create a form element
+Create a form text input
+Create a form textarea
+Add Form Labels
+Add fieldsets and legends
 
 ---------------------------------------------------------
 CSS 
 ---------------------------------------------------------
-
-
-
-
-
-
-
-
-
+CSS Layout Wrapper Challenge - Review 
+CSS Display Mode Challenge - Review
+CSS Footer Layout - OK
+CSS Positioning Planning - OK
+Floats - OK
+Styling the “wildlife” div with Background Properties - Review 
+Make a CSS image gallery - Review 
+Padding, Borders and Margins - OK
+Attribute selectors challenge - OK
 
 ---------------------------------------------------------
 JavaScript

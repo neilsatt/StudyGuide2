@@ -1,1 +1,33 @@
 /* Quiz and Code Challenges that need more work */
+
+/* 
+    Display the list items inside .main-nav side by side. Use the display value that generates a block element that flows with surrounding content.
+*/
+
+.main-nav li {
+  display: inline-block;
+}
+
+
+/* Background properties */
+.wildlife {
+  background-image: url('img/bear.jpg'); 
+  background-repeat: no-repeat;
+  background-position: center; 
+  /* fills the entire background of the container while maintaining the width and height proportions */
+  background-size: cover; 
+  /*  forces any padding and border widths into its total width and height */
+  box-sizing: border-box;  
+}
+
+/* Add CSS that will allow all images to fill their parent element. */
+img {
+  max-width: 100%;
+}
+
+/* Select the element with the ID gallery. Then, remove the margin, padding, and bullet points.*/
+#gallery {
+ list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
