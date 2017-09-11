@@ -1,6 +1,11 @@
-CSS
+Courses you might wish to review:
 
+HTML Forms - https://teamtreehouse.com/library/html-forms
+Responsive Images - https://teamtreehouse.com/library/responsive-images
+CSS Layout Basics - https://teamtreehouse.com/library/css-layout-basics
 
-https://teamtreehouse.com/library/css-layout-basics
+JavaScript Loops, Arrays, and Objects - 
+https://teamtreehouse.com/library/javascript-loops-arrays-and-objects
 
-http://www.barelyfitz.com/screencast/html-training/css/positioning/
+Interactive Web Pages With JavaScript - 
+https://teamtreehouse.com/library/javascript-and-the-dom-2
