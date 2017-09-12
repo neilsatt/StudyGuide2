@@ -79,7 +79,6 @@ var coordinates = [
 
 
 
-/* BUILD A QUIZ CHALLENGE */
 
 
 
