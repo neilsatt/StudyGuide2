@@ -34,4 +34,10 @@ function myFunction(myArray, num) {
 
 var returnValue = myFunction([34,55,32], 7);
 console.log(returnValue)
+
+/* Another way to get the last item in an array, without removing it */
+
+var myArray = [2,5,3,7,9,56,32];
+
+var lastArrayItem = myArray[myArray.length - 1];
     
