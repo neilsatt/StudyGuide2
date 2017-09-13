@@ -78,11 +78,32 @@ var coordinates = [
 ];
 
 
+/* Build and Object Challeng is in a separate folder */
 
+/* QUIZ */
 
+/* Correct do while loop */
+var input = '';
+do {
+   input = prompt("Do stuff"); 
+} while (input != '');
 
+/* What does indexOf return if it can't find a matching item in an array? */
+-1
 
+/* Display every property and value of the location object */
+for (var property in location) {
+    document.write('<p>' + property + ':' + location[property] + '</p>');
+}
 
+/* Endless loop */
+for(var i = 1; i > 0; i++){
+    console.log(i);
+}
+
+/* A two-dimensional array is an array of objects
+        False (each item in the array is another array)
+ */
 
 
 
