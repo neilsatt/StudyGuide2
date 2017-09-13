@@ -1,0 +1,64 @@
+// Selection Review
+
+/* 
+
+What data type does document.getElementsByClassName return?
+   - HTML Collection
+   
+How can you apply changes to all the elements in an HTML collection? 
+    - use a loop
+    
+How would you select the body element using document.getElementsByTagName, and store it in the variable body?
+(Hint: Don't forget that this method returns a collection, not a single element.)
+   document.getElementsByTagName("body")[0]
+
+*/
+
+
+/* 
+ This code will apply the first color to the first list item, the second color to the second list item and so on. 
+ 
+ But the code is not complete. On line 1 of app.js, set the variable listItems to refer to a collection. 
+ 
+ The collection should contain all list items in the unordered list element with the id of rainbow.
+*/
+
+let listItems = document.querySele;
+const colors = ["#C2272D", "#F8931F", "#FFFF01", "#009245", "#0193D9", "#0C04ED", "#612F90"];
+
+for(var i = 0; i < colors.length; i ++) {
+  listItems[i].style.color = colors[i];    
+}
+   
+   
+   
+/* Type of DOM Selections */
+var myElement = document.getElementById("intro");
+
+
+/* Find all HTML elements with the same tag name */
+var x = document.getElementsByTagName("p");
+
+
+/* Find all HTML elements with the same class name */
+var x = document.getElementsByClassName("intro");
+
+
+/* Finds first HTML element that matches a CSS Selector  
+   Get the first element in the document with class="example" */
+var x = document.querySelector(".example");
+
+/* Finds HTML elements that match a CSS selector (id, class names, types, attributes, etc.) */
+var x = document.querySelectorAll("p.intro");
+
+
+// QUIZ
+
+/* How would you select the first element in the DOM with its HTML title attribute set to 'My Title'? */
+document.querySelector('[title=MyTitle]');
+
+/* 
+How would you use querySelectorAll to obtain a reference to all elements in a document with the class student-info and assign it to the constant studentInfo?
+*/
+document.querySelectorAll('.student-info')
+
