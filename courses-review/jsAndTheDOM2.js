@@ -120,10 +120,33 @@ let firstListItem = document.getElementById('first');
 myList.removeChild(firstListItem);
 
 
-/* RESPONDING TO USER INTERACTION ----------------------------------------------------------------------------------------------------/
+/* RESPONDING TO USER INTERACTION ----------------------------------------------------------------------------------------------------*/
+/* 
+How would you set the following function `add` up to run after 5 seconds pass, using Window.setTimeout? In addition, how would you pass `add` the arguments 2 and 2 when it runs?
+*/
+
+function add(num1, num2) {
+  console.log(num1 + num2);
+}
+
+window.setTimeout(add, 5000, 2,2);
 
 
+/* You can set a listener for an event you want to handle on a sibling of the parent of your target element, because of event delegation. */
+False
+
+/* What is the callback function that is passed to addEventListener often called? */
+An Event Handler
 
 
+/* 
+In the listener that has been added to the section element, ensure that the text input elements are the only children that trigger the background-changing behavior.
+*/
+let section = document.getElementsByTagName('section')[0];
 
+section.addEventListener('click', (e) => {
+  if(e.target.tagName === 'INPUT') {
+    e.target.style.backgroundColor = 'rgb(255, 255, 0)';
+  }
+});
 
