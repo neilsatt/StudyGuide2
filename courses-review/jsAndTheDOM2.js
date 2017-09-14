@@ -150,3 +150,81 @@ section.addEventListener('click', (e) => {
   }
 });
 
+/* TRAVERSING THE DOM ----------------------------------------------------------------------------------------------------*/
+
+/* traverse to the parent element of the removeMe element */
+const removeMe = document.querySelector('.remove_me');
+let parent = removeMe.parentNode;
+
+/* Remove the removeMe element from the parent element */
+parent.removeChild(removeMe);
+
+/* QUIZ */
+/* Why is previousElementSibling preferred to previousSibling when manipulating the DOM? */
+- Unlike previousSibling, previousElementSibling always returns a DOM Element
+
+/* How many nodes are needed to perform the insertBefore method? */
+3 
+parentNode.insertBefore(newNode, referenceNode);
+// parentNode The parent of the newly inserted node.
+// newNode The node to be inserted.
+// referenceNode The node before which newNode is inserted.
+list.insertBefore(newItem, list.childNodes[0]); 
+
+/* What is DOM traversal */
+Selecting an element based on its relationship to another element within the DOM
+
+/* nextElementSibingChallenge 
+  Write a feature that lets users move a list item down and up 
+*/
+if(event.target.className === 'up'){
+    let li = event.target.parentNode;
+    let prevLi = li.previousElementSibling;
+    let ul = li.parentNode;
+    if(prevLi){
+        ul.insertBefore(li, prevLi);
+    }
+}
+
+
+/* 
+When any one of the buttons is clicked, a class of highlight should be added to the paragraph element immediately preceding that button inside the parent list item element.
+*/
+
+const list = document.getElementsByTagName('ul')[0];
+
+list.addEventListener('click', function(e) {
+  if (e.target.tagName == 'BUTTON') {
+     // ANSWER CODE
+     let p = e.target.previousElementSibling; 
+     p.className = 'highlight';
+  }
+});
+
+
+/* Why can firstChild be more difficult to work with than firstElementChild when traversing the DOM? 
+
+    It does not always return DOM elements
+*/
+
+/* 
+  Using DOM traversal, assign all children of the ul to the constant lis
+  const lis = li.children;
+*/
+
+/* 
+    <section>
+        <p>This is the first paragraph</p>
+        <p>This is a slightly longer, second paragraph</p>
+        <p>Shorter, last paragraph</p>
+    </section>
+   Get all the paragraph elements within section and assign them to the paragraphs variable
+*/
+const section = document.querySelector('section');
+let paragraphs = section.children;
+
+/* 
+    For every paragraph element change the color to be blue. Paragraphs contains a collection of elements, so you'll need to use a loop and access each element inside.
+*/
+for(var i=0; i<paragraphs.length; i++){
+    paragraphs[i].style.color = 'blue'; // USE THE 'i' VARIABLE TO ACCESS EACH ONE!!!
